@@ -1,8 +1,8 @@
 package usecase
 
 import (
+	"codepix-go/domain/model"
 	"errors"
-	"github.com/codeedu/imersao/codepix-go/domain/model"
 	"log"
 )
 

@@ -1,15 +1,16 @@
 package grpc
 
 import (
+	"codepix-go/application/grpc/pb"
+	"codepix-go/application/usecase"
+	"codepix-go/infrastructure/repository"
 	"fmt"
-	"github.com/codeedu/imersao/codepix-go/application/grpc/pb"
-	"github.com/codeedu/imersao/codepix-go/application/usecase"
-	"github.com/codeedu/imersao/codepix-go/infrastructure/repository"
+	"log"
+	"net"
+
 	"github.com/jinzhu/gorm"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
-	"log"
-	"net"
 )
 
 func StartGrpcServer(database *gorm.DB, port int) {

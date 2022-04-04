@@ -16,8 +16,8 @@ limitations under the License.
 package cmd
 
 import (
-	"github.com/codeedu/imersao/codepix-go/application/grpc"
-	"github.com/codeedu/imersao/codepix-go/infrastructure/db"
+	"codepix-go/application/grpc"
+	"codepix-go/infrastructure/db"
 	"os"
 
 	"github.com/spf13/cobra"
@@ -37,7 +37,7 @@ var grpcCmd = &cobra.Command{
 
 func init() {
 	rootCmd.AddCommand(grpcCmd)
-	grpcCmd.Flags().IntVarP(&portNumber, "port", "p",50051, "gRPC Server port")
+	grpcCmd.Flags().IntVarP(&portNumber, "port", "p", 50051, "gRPC Server port")
 
 	// Here you will define your flags and configuration settings.
 

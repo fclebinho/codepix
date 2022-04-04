@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "github.com/codeedu/imersao/codepix-go/cmd"
+import "codepix-go/cmd"
 
 func main() {
 	cmd.Execute()

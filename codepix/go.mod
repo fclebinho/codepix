@@ -1,4 +1,4 @@
-module github.com/codeedu/imersao/codepix-go
+module codepix-go
 
 go 1.15
 
